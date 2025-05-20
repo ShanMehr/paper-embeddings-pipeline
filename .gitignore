@@ -1,0 +1,6 @@
+
+# pixi environments
+.pixi
+*.egg-info
+.qodo
+.test_suite_analysis
