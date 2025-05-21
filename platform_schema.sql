@@ -13,7 +13,6 @@ CREATE TABLE paper_vector_db (
     id SERIAL PRIMARY KEY,
     paper_id VARCHAR(255) NOT NULL UNIQUE,
     embedding VECTOR(768) NOT NULL,
-    title VARCHAR(255) NOT NULL,
-    abstract TEXT
+    context TEXT
 );
 
