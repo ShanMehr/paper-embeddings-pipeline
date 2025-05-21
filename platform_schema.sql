@@ -8,6 +8,8 @@ DROP DATABASE IF EXISTS research_platform;
 CREATE DATABASE research_platform;
 \c research_platform;
 
+DROP TABLE if EXISTS paper_vector_db;
+
 -- Create Tables
 CREATE TABLE paper_vector_db (
     id SERIAL PRIMARY KEY,
