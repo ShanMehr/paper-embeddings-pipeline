@@ -19,6 +19,8 @@ ipywidgets = ">=8.1.7,<9"
 langchain-huggingface = ">=0.2.0,<0.3"
 sentence-transformers = ">=4.1.0,<5"
 psycopg = ">=3.2.9,<4"
+polars = ">=1.29.0,<2"
 
 [pypi-dependencies]
 langchain-postgres = ">=0.0.13, <0.0.14"
+kagglehub = ">=0.3.12, <0.4"
