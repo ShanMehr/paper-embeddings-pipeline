@@ -5,3 +5,4 @@
 .qodo
 .test_suite_analysis
 arxiv-metadata-oai-snapshot.json
+.env

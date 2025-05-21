@@ -11,7 +11,7 @@ CREATE DATABASE research_platform;
 -- Create Tables
 CREATE TABLE paper_vector_db (
     id SERIAL PRIMARY KEY,
-    paper_id VARCHAR(255) NOT NULL,
+    paper_id VARCHAR(255) NOT NULL UNIQUE,
     embedding VECTOR(768) NOT NULL,
     title VARCHAR(255) NOT NULL,
     abstract TEXT
