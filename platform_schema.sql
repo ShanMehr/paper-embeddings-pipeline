@@ -10,7 +10,6 @@ DROP TABLE IF EXISTS annotation_records;
 DROP TABLE IF EXISTS paper_metadata;
 DROP TABLE IF EXISTS author_attribution_linking;
 DROP TABLE IF EXISTS chats;
-DROP TABLE if EXISTS documents;
 
 --  Drop the database if it exists
 DROP DATABASE IF EXISTS research_platform;
@@ -61,6 +60,13 @@ CREATE TABLE comments (
   id SERIAL PRIMARY KEY,
   annotation_id INTEGER REFERENCES annotation_records(id),
   user_id VARCHAR(255) NOT NULL,
+  y2 FLOAT NOT NULL,
+  width FLOAT NOT NULL,
+  height FLOAT NOT NULL,
+  page_number INT NOT NULL,
+  usePdfCoordinates BOOLEAN DEFAULT FALSE,
+  boundingRectangle BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   text TEXT,
   emoji VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
