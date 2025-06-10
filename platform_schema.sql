@@ -10,6 +10,7 @@ DROP TABLE IF EXISTS annotation_records;
 DROP TABLE IF EXISTS paper_metadata;
 DROP TABLE IF EXISTS author_attribution_linking;
 DROP TABLE IF EXISTS chats;
+DROP TABLE IF EXISTS comment_vector_db;
 
 --  Drop the database if it exists
 DROP DATABASE IF EXISTS research_platform;
@@ -66,7 +67,6 @@ CREATE TABLE comments (
   page_number INT NOT NULL,
   usePdfCoordinates BOOLEAN DEFAULT FALSE,
   boundingRectangle BOOLEAN DEFAULT FALSE,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   text TEXT,
   emoji VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
